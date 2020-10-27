@@ -4,14 +4,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @author 金世强
+ */
 @RestController
 public class DemoController {
 
+    private final FeignTest feignTest;
+
     @Autowired
-    private FeginTest feginTest;
+    public DemoController(FeignTest feignTest) {
+        this.feignTest = feignTest;
+    }
 
     @GetMapping("sendDemo")
     public String sendDemo() {
-        return feginTest.getDemo1();
+        return feignTest.getDemo1();
     }
 }
