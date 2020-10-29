@@ -1,4 +1,4 @@
-package com.xxxxx.demo;
+package com.xxxxx;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,15 +7,16 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 
 /**
- * @author 金世强
+ * @author jinshiqiang
  */
 @SpringBootApplication
 @EnableFeignClients
 @EnableDiscoveryClient
-public class DemoServer2Application {
+public class DemoServer2WebApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoServer2Application.class, args);
+        SpringApplication.run(DemoServer2WebApplication.class, args);
     }
+
 
 }

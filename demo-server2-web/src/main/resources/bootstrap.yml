@@ -22,6 +22,6 @@ spring:
             refresh: true
         namespace: dev
 server:
-  port: 20002
+  port: 20003
 
 
